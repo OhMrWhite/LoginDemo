@@ -12,6 +12,7 @@ class BYHomeViewController: UIViewController {
     
     @IBOutlet weak var passwordLevelLb: UILabel!
     
+    @IBOutlet weak var passwordLevelTitle: UILabel!
     @IBOutlet weak var passwordLb: UILabel!
     let homeVM = BYHomeViewModel()
     var disposeBag = DisposeBag()
@@ -31,13 +32,14 @@ class BYHomeViewController: UIViewController {
     }
     ///初始化NAV
     func initNav() -> () {
-       title = "主页"
+        title = "主页".localized
     }
     ///初始化View
     func initView() -> () {
     }
     ///初始化数据
     func initData() -> () {
+        self.passwordLevelTitle.text = "当前密码强度".localized
         self.passwordLevelLb.text = homeVM.password.value
         homeVM.passwordLevelObserable.bind(to: passwordLevelLb.rx.passwordLevel).disposed(by: disposeBag)
         homeVM.passwordObserable.bind(to: passwordLb.rx.text).disposed(by: disposeBag)

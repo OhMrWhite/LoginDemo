@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  LoginDemo
+
+  Created by xuzheng on 2022/6/17.
+  
+*/
+"登录" = "Login";
+"主页" = "Home";
+"密码" = "Password";
+"密码可用" = "The password can be used";
+"账号可用" = "The Email can be used";
+"输入的密码长度不足" = "The entered password length is insufficient";
+"输入的Email格式错误" = "Incorrect Email format entered";
+"登录成功" = "Login successful";
+"登录失败" = "Login failed";
+"当前密码强度" = "Current password strength";
+"弱" = "Weak";
+"中等" = "Medium";
+"强" = "Strong";
+"非常强" = "Very strong";
+

@@ -28,7 +28,7 @@ class BYLoginViewController: UIViewController {
     }
     ///初始化NAV
     func initNav() -> () {
-        title = "登录"
+        title = "登录".localized
     }
     ///初始化数据
     func initData() -> () {

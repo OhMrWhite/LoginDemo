@@ -20,7 +20,7 @@ struct PasswordCharacterType:OptionSet {
 // 密码强度级别
 enum PasswordStrengthLevel {
     case low
-    case midium
+    case medium
     case strong
     case veryStrong
 }
@@ -30,7 +30,7 @@ extension PasswordStrengthLevel {
         switch self {
         case .low:
             return .red
-        case .midium:
+        case .medium:
             return .orange
         case .strong:
             return .green
@@ -41,13 +41,13 @@ extension PasswordStrengthLevel {
     var description:String {
         switch self {
         case .low:
-            return "弱"
-        case .midium:
-            return "中等"
+            return "弱".localized
+        case .medium:
+            return "中等".localized
         case .strong:
-            return "强"
+            return "强".localized
         case .veryStrong:
-            return "非常强"
+            return "非常强".localized
         }
     }
 }
@@ -70,7 +70,7 @@ class PasswordStrengthUtil {
            characterType.contains([.num,.other_letter]) ||
            characterType.contains([.small_letter,.capital_letter]) ||
            characterType.contains([.small_letter,.other_letter]) ||    characterType.contains([.capital_letter,.other_letter]){
-            return .midium
+            return .medium
         }
         if  characterType.contains(.num) ||
                 characterType.contains(.capital_letter) ||

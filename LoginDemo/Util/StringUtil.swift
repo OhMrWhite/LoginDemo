@@ -21,5 +21,9 @@ extension String {
         let predicate = NSPredicate.init(format: "SELF MATCHES %@", numRegex)
         return predicate.evaluate(with: self)
     }
-
+    /// 国际化
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+    
 }
