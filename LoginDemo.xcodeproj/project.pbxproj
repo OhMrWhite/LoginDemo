@@ -16,9 +16,12 @@
 		A91384B5285C13B5004FF3B0 /* BYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384B4285C13B5004FF3B0 /* BYLoginViewController.swift */; };
 		A91384B8285C1987004FF3B0 /* BYLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */; };
 		A91384C1285C1F28004FF3B0 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C0285C1F28004FF3B0 /* StringUtil.swift */; };
-		A91384C3285C2B2C004FF3B0 /* BYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */; };
 		A91384C8285C4FED004FF3B0 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C7285C4FED004FF3B0 /* InputValidator.swift */; };
 		A91384CA285C50C0004FF3B0 /* ResultStateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */; };
+		A91384CC285C63B9004FF3B0 /* PasswordStrengthUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384CB285C63B9004FF3B0 /* PasswordStrengthUtil.swift */; };
+		A91384CF285C77EF004FF3B0 /* BYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384CD285C77EF004FF3B0 /* BYHomeViewController.swift */; };
+		A91384D0285C77EF004FF3B0 /* BYHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91384CE285C77EF004FF3B0 /* BYHomeViewController.xib */; };
+		A91384D3285C78E0004FF3B0 /* BYHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384D2285C78E0004FF3B0 /* BYHomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +37,12 @@
 		A91384B4285C13B5004FF3B0 /* BYLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYLoginViewController.swift; sourceTree = "<group>"; };
 		A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYLoginViewModel.swift; sourceTree = "<group>"; };
 		A91384C0285C1F28004FF3B0 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
-		A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYHomeViewController.swift; sourceTree = "<group>"; };
 		A91384C7285C4FED004FF3B0 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStateUtil.swift; sourceTree = "<group>"; };
+		A91384CB285C63B9004FF3B0 /* PasswordStrengthUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthUtil.swift; sourceTree = "<group>"; };
+		A91384CD285C77EF004FF3B0 /* BYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYHomeViewController.swift; sourceTree = "<group>"; };
+		A91384CE285C77EF004FF3B0 /* BYHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BYHomeViewController.xib; sourceTree = "<group>"; };
+		A91384D2285C78E0004FF3B0 /* BYHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYHomeViewModel.swift; sourceTree = "<group>"; };
 		C1860F5C2220E298D568E510 /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +128,7 @@
 		A91384AE285C131B004FF3B0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A91384D1285C78BF004FF3B0 /* ViewModels */,
 				A91384B3285C1374004FF3B0 /* ViewControllers */,
 			);
 			path = Home;
@@ -162,7 +169,8 @@
 		A91384B3285C1374004FF3B0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */,
+				A91384CD285C77EF004FF3B0 /* BYHomeViewController.swift */,
+				A91384CE285C77EF004FF3B0 /* BYHomeViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,8 +190,17 @@
 			isa = PBXGroup;
 			children = (
 				A91384C0285C1F28004FF3B0 /* StringUtil.swift */,
+				A91384CB285C63B9004FF3B0 /* PasswordStrengthUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A91384D1285C78BF004FF3B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A91384D2285C78E0004FF3B0 /* BYHomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F275EC1C087704E2AC5D020B /* Frameworks */ = {
@@ -254,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91384D0285C77EF004FF3B0 /* BYHomeViewController.xib in Resources */,
 				A91384A4285C0FD8004FF3B0 /* LaunchScreen.storyboard in Resources */,
 				A91384A1285C0FD8004FF3B0 /* Assets.xcassets in Resources */,
 				A913849F285C0FD6004FF3B0 /* Main.storyboard in Resources */,
@@ -309,13 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91384C3285C2B2C004FF3B0 /* BYHomeViewController.swift in Sources */,
 				A91384B5285C13B5004FF3B0 /* BYLoginViewController.swift in Sources */,
 				A91384CA285C50C0004FF3B0 /* ResultStateUtil.swift in Sources */,
 				A91384C1285C1F28004FF3B0 /* StringUtil.swift in Sources */,
+				A91384CC285C63B9004FF3B0 /* PasswordStrengthUtil.swift in Sources */,
+				A91384D3285C78E0004FF3B0 /* BYHomeViewModel.swift in Sources */,
 				A91384C8285C4FED004FF3B0 /* InputValidator.swift in Sources */,
 				A91384B8285C1987004FF3B0 /* BYLoginViewModel.swift in Sources */,
 				A9138498285C0FD6004FF3B0 /* AppDelegate.swift in Sources */,
+				A91384CF285C77EF004FF3B0 /* BYHomeViewController.swift in Sources */,
 				A913849A285C0FD6004FF3B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

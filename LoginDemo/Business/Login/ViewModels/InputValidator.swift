@@ -12,7 +12,7 @@ class InputValidator {
 
 extension InputValidator {
     //判断密码长度
-    class func isValidPassword(_ password: String, count:Int = 8) -> Bool {
+    class func isValidPassword(_ password: String, count:Int = 1) -> Bool {
         return password.count >= count
     }
     class func isVailidEmail(_ email:String) -> Bool {

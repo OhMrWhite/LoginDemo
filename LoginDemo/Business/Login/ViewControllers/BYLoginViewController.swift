@@ -67,9 +67,11 @@ extension BYLoginViewController {
 
         //登录点击
         loginBtn?.rx.tap.subscribe(onNext: {[weak self] in
-            self?.loginVM.loadData { isSuccess in
+            self?.loginVM.loadData {[weak self] isSuccess in
                 if isSuccess {
-                    self?.navigationController?.pushViewController(BYHomeViewController(), animated: true)
+                    let home = BYHomeViewController()
+                    home.homeVM.password.accept(self!.loginVM.password.value)
+                    self?.navigationController?.pushViewController(home, animated: true)
                 }
             }
         }).disposed(by: disposeBag)
