@@ -49,6 +49,9 @@
 		A91384E0285C88AF004FF3B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A91384E2285C8DAB004FF3B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		A91384E9285C9045004FF3B0 /* BYHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BYHomeViewController.xib; sourceTree = "<group>"; };
+		A91384EB285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A91384EC285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		A91384ED285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C1860F5C2220E298D568E510 /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +266,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				ar,
 			);
 			mainGroup = A913848B285C0FD6004FF3B0;
 			productRefGroup = A9138495285C0FD6004FF3B0 /* Products */;
@@ -358,6 +362,7 @@
 				A913849E285C0FD6004FF3B0 /* Base */,
 				A91384DF285C88AF004FF3B0 /* zh-Hans */,
 				A91384E2285C8DAB004FF3B0 /* en */,
+				A91384EC285C920D004FF3B0 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 			children = (
 				A91384A3285C0FD8004FF3B0 /* Base */,
 				A91384DE285C88AF004FF3B0 /* zh-Hans */,
+				A91384EB285C920D004FF3B0 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			children = (
 				A91384DC285C8896004FF3B0 /* en */,
 				A91384E0285C88AF004FF3B0 /* zh-Hans */,
+				A91384ED285C920D004FF3B0 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

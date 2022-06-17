@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "1nC-Nu-4fe"; */
+"1nC-Nu-4fe.normalTitle" = "سجل";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "82k-eM-Hg1"; */
+"82k-eM-Hg1.text" = "Email";
+
+/* Class = "UILabel"; text = " "; ObjectID = "li8-6Y-C9f"; */
+"li8-6Y-C9f.text" = " ";
+
+/* Class = "UILabel"; text = "密码"; ObjectID = "tsJ-Yo-7hl"; */
+"tsJ-Yo-7hl.text" = "كلمة السر";
+
+/* Class = "UILabel"; text = " "; ObjectID = "y0C-wn-WMA"; */
+"y0C-wn-WMA.text" = " ";
