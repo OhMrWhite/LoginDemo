@@ -14,6 +14,11 @@
 		A91384A1285C0FD8004FF3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91384A0285C0FD8004FF3B0 /* Assets.xcassets */; };
 		A91384A4285C0FD8004FF3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91384A2285C0FD8004FF3B0 /* LaunchScreen.storyboard */; };
 		A91384B5285C13B5004FF3B0 /* BYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384B4285C13B5004FF3B0 /* BYLoginViewController.swift */; };
+		A91384B8285C1987004FF3B0 /* BYLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */; };
+		A91384C1285C1F28004FF3B0 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C0285C1F28004FF3B0 /* StringUtil.swift */; };
+		A91384C3285C2B2C004FF3B0 /* BYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */; };
+		A91384C8285C4FED004FF3B0 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C7285C4FED004FF3B0 /* InputValidator.swift */; };
+		A91384CA285C50C0004FF3B0 /* ResultStateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		A91384A3285C0FD8004FF3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A91384A5285C0FD8004FF3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91384B4285C13B5004FF3B0 /* BYLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYLoginViewController.swift; sourceTree = "<group>"; };
+		A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYLoginViewModel.swift; sourceTree = "<group>"; };
+		A91384C0285C1F28004FF3B0 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYHomeViewController.swift; sourceTree = "<group>"; };
+		A91384C7285C4FED004FF3B0 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStateUtil.swift; sourceTree = "<group>"; };
 		C1860F5C2220E298D568E510 /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +82,7 @@
 		A9138496285C0FD6004FF3B0 /* LoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A91384BD285C1C7F004FF3B0 /* Util */,
 				A91384B6285C17DB004FF3B0 /* Resources */,
 				A91384AD285C12D8004FF3B0 /* Application */,
 				A91384AB285C1283004FF3B0 /* Business */,
@@ -133,6 +144,9 @@
 		A91384B1285C1345004FF3B0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */,
+				A91384C7285C4FED004FF3B0 /* InputValidator.swift */,
+				A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -148,6 +162,7 @@
 		A91384B3285C1374004FF3B0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A91384C2285C2B2C004FF3B0 /* BYHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +176,14 @@
 				A913849D285C0FD6004FF3B0 /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A91384BD285C1C7F004FF3B0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A91384C0285C1F28004FF3B0 /* StringUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		F275EC1C087704E2AC5D020B /* Frameworks */ = {
@@ -286,7 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91384C3285C2B2C004FF3B0 /* BYHomeViewController.swift in Sources */,
 				A91384B5285C13B5004FF3B0 /* BYLoginViewController.swift in Sources */,
+				A91384CA285C50C0004FF3B0 /* ResultStateUtil.swift in Sources */,
+				A91384C1285C1F28004FF3B0 /* StringUtil.swift in Sources */,
+				A91384C8285C4FED004FF3B0 /* InputValidator.swift in Sources */,
+				A91384B8285C1987004FF3B0 /* BYLoginViewModel.swift in Sources */,
 				A9138498285C0FD6004FF3B0 /* AppDelegate.swift in Sources */,
 				A913849A285C0FD6004FF3B0 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AFC95U3355;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginDemo/Info.plist;
+				INFOPLIST_FILE = LoginDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,7 +498,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AFC95U3355;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginDemo/Info.plist;
+				INFOPLIST_FILE = LoginDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
