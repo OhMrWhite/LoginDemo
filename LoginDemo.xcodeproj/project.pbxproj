@@ -23,6 +23,8 @@
 		A91384D3285C78E0004FF3B0 /* BYHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384D2285C78E0004FF3B0 /* BYHomeViewModel.swift */; };
 		A91384DB285C8896004FF3B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A91384DD285C8896004FF3B0 /* Localizable.strings */; };
 		A91384EA285C9045004FF3B0 /* BYHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91384E9285C9045004FF3B0 /* BYHomeViewController.xib */; };
+		A91384F0285D72AA004FF3B0 /* BYLoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384EF285D72AA004FF3B0 /* BYLoginReactor.swift */; };
+		A91384F22860568E004FF3B0 /* BYHomeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91384F12860568E004FF3B0 /* BYHomeReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		A91384EB285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A91384EC285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		A91384ED285C920D004FF3B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A91384EF285D72AA004FF3B0 /* BYLoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYLoginReactor.swift; sourceTree = "<group>"; };
+		A91384F12860568E004FF3B0 /* BYHomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYHomeReactor.swift; sourceTree = "<group>"; };
 		C1860F5C2220E298D568E510 /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +167,7 @@
 				A91384B7285C1987004FF3B0 /* BYLoginViewModel.swift */,
 				A91384C7285C4FED004FF3B0 /* InputValidator.swift */,
 				A91384C9285C50C0004FF3B0 /* ResultStateUtil.swift */,
+				A91384EF285D72AA004FF3B0 /* BYLoginReactor.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			children = (
 				A91384CD285C77EF004FF3B0 /* BYHomeViewController.swift */,
 				A91384E9285C9045004FF3B0 /* BYHomeViewController.xib */,
+				A91384F12860568E004FF3B0 /* BYHomeReactor.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -342,8 +348,10 @@
 			files = (
 				A91384B5285C13B5004FF3B0 /* BYLoginViewController.swift in Sources */,
 				A91384CA285C50C0004FF3B0 /* ResultStateUtil.swift in Sources */,
+				A91384F22860568E004FF3B0 /* BYHomeReactor.swift in Sources */,
 				A91384C1285C1F28004FF3B0 /* StringUtil.swift in Sources */,
 				A91384CC285C63B9004FF3B0 /* PasswordStrengthUtil.swift in Sources */,
+				A91384F0285D72AA004FF3B0 /* BYLoginReactor.swift in Sources */,
 				A91384D3285C78E0004FF3B0 /* BYHomeViewModel.swift in Sources */,
 				A91384C8285C4FED004FF3B0 /* InputValidator.swift in Sources */,
 				A91384B8285C1987004FF3B0 /* BYLoginViewModel.swift in Sources */,

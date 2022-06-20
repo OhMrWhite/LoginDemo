@@ -8,7 +8,8 @@
 import UIKit
 import RxCocoa
 import RxSwift
-class BYHomeViewController: UIViewController {
+import ReactorKit
+class BYHomeViewController: UIViewController,StoryboardView {
     
     @IBOutlet weak var passwordLevelLb: UILabel!
     
@@ -16,7 +17,14 @@ class BYHomeViewController: UIViewController {
     @IBOutlet weak var passwordLb: UILabel!
     let homeVM = BYHomeViewModel()
     var disposeBag = DisposeBag()
+    convenience init(reactor: BYHomeReactor) {
+      self.init()
+      self.reactor = reactor
+    }
 
+    required convenience init?(coder aDecoder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+    }
     //MARK:- 初始化界面 及 数据
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -40,9 +48,20 @@ class BYHomeViewController: UIViewController {
     ///初始化数据
     func initData() -> () {
         self.passwordLevelTitle.text = "当前密码强度".localized
-        self.passwordLevelLb.text = homeVM.password.value
-        homeVM.passwordLevelObserable.bind(to: passwordLevelLb.rx.passwordLevel).disposed(by: disposeBag)
-        homeVM.passwordObserable.bind(to: passwordLb.rx.text).disposed(by: disposeBag)
+        
+//        self.passwordLevelLb.text = homeVM.password.value
+//        homeVM.passwordLevelObserable.bind(to: passwordLevelLb.rx.passwordLevel).disposed(by: disposeBag)
+//        homeVM.passwordObserable.bind(to: passwordLb.rx.text).disposed(by: disposeBag)
+        
+    }
+    func bind(reactor: BYHomeReactor) {
+        reactor.state.map{$0.password}
+            .bind(to: passwordLb.rx.text)
+            .disposed(by: disposeBag)
+        reactor.state
+            .map{$0.passwordLevel}
+            .bind(to: passwordLevelLb.rx.passwordLevel)
+            .disposed(by: disposeBag)
         
     }
 }
